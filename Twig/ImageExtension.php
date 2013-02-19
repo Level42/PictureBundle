@@ -1,13 +1,13 @@
 <?php
 /**
- * This file is part of VersusCommonBundle.
+ * This file is part of Level42PictureBundle.
  *
  * (c) 2013 Level42 / Florent PERINEL
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Versus\CommonBundle\Twig;
+namespace Level42\PictureBundle\Twig;
 
 use \Twig_Extension;
 use \Twig_ExtensionInterface;
@@ -17,12 +17,12 @@ use \DateTime;
 use JMS\DiExtraBundle\Annotation\Service;
 use JMS\DiExtraBundle\Annotation\Tag;
 
-use Versus\CommonBundle\Entity\Image;
+use Level42\PictureBundle\Entity\Image;
 
 /**
  * Twig extension class
  * 
- * @Service("versus.common.twig.extension")
+ * @Service("level42.picture.twig.extension")
  * @Tag("twig.extension")
  */
 class ImageExtension extends Twig_Extension
@@ -64,7 +64,7 @@ class ImageExtension extends Twig_Extension
             $image->save();
         }
         
-        return $fileInfo['dirname'] . DIRECTORY_SEPARATOR . $resizeFileNameExt;
+        return $fileInfo['dirname'] . '/' . $resizeFileNameExt;
     }
     
     /**
@@ -74,7 +74,7 @@ class ImageExtension extends Twig_Extension
      */
     public function getName()
     {
-        return 'versus_common_extension';
+        return 'level42_picture_extension';
     }
     
 }

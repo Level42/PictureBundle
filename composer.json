@@ -1,38 +1,15 @@
 {
-    "name": "level42/versus/PaintballWebSite",
-    "description": "Versus paintball team website",
-    "version": "0.1.0-dev",
+    "name": "level42/picture-bundle",
+    "description": "Bundle to add twig helper to resize pictures",
+    "version": "1.0.0-stable",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Florent PERINEL",
-            "email": "ezekiel@versus-assoc.net"
-        }
-    ],
-    "support": {
-        "email": "webmaster@versus-assoc.com"
-    },
     "autoload": {
         "psr-0": { "": "src/" }
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.1.*",
-        "doctrine/orm": ">=2.2.3,<2.4-dev",
-        "doctrine/doctrine-bundle": "1.1.*",
         "twig/extensions": "1.0.*@dev",
-        "symfony/assetic-bundle": "2.1.*",
-        "symfony/swiftmailer-bundle": "2.1.*",
-        "symfony/monolog-bundle": "2.1.*",
-        "sensio/distribution-bundle": "2.1.*",
-        "sensio/framework-extra-bundle": "2.1.*",
-        "sensio/generator-bundle": "2.1.*",
-        "jms/security-extra-bundle": "1.2.*",
-        "jms/di-extra-bundle": "1.1.*",
-        "kriswallsmith/assetic": "1.1.*@dev",
-        "genemu/form-bundle": "2.1.*",
-        "stfalcon/tinymce-bundle": "dev-master",
-        "friendsofsymfony/user-bundle": "2.0.*"
+        "jms/di-extra-bundle": "1.1.*"
     },
     "scripts": {
         "post-install-cmd": [

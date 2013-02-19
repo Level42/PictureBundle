@@ -1,13 +1,13 @@
 <?php
 /**
- * This file is part of VersusCommonBundle.
+ * This file is part of Level42PictureBundle.
  *
  * (c) 2013 Level42 / Florent PERINEL
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Versus\CommonBundle\Entity;
+namespace Level42\PictureBundle\Entity;
 
 /**
  * Class use to manipulate pictures
